@@ -1,0 +1,10 @@
+13:40:07 **** Incremental Build of configuration Debug for project ASCII ****
+make all 
+'Building target: ASCII'
+'Invoking: Cross GCC Linker'
+gcc  -o "ASCII"  ./main.o   
+'Finished building target: ASCII'
+' '
+
+13:40:09 Build Finished. 0 errors, 0 warnings. (took 1s.554ms)
+

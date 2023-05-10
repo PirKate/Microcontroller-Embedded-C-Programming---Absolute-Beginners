@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdint.h>
+
+
+
+int main (void) {
+
+	float a, b;
+
+	printf("a = ");
+
+	if( scanf("%f",a) == 0 ) {
+		printf("invalid input, Exiting...\n");
+		wait_for_input();
+	}
+}

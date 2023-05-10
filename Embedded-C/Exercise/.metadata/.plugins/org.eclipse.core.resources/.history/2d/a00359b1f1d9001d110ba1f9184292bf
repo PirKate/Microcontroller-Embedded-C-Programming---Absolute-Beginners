@@ -1,0 +1,16 @@
+
+
+int main (void) {
+	float n1, n2, n3;
+	float avg;
+
+	printf ("n1 = ");
+	scanf("%f", &n1);
+	printf("\nn2 = ");
+	scanf("%f", &n2);
+	printf("\nn3 = ");
+	scanf("%f", &n3);
+
+	avg = (n1 + n2 + n3)/3;
+	printf("\n avg = %f", avg);
+}

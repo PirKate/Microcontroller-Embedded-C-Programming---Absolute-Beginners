@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdint.h>
+
+int main (void) {
+	int age;
+
+	printf("Enter your age: ");
+
+	fflush(stdout);
+	scanf("%d",age);
+
+	if (age < 18) printf("\nYou can't vote\n");
+	else printf("\nYou can vote\n");
+
+	while(getchar() != '\n') {
+
+	}
+	getchar();
+}

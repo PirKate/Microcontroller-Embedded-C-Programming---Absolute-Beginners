@@ -1,0 +1,10 @@
+13:40:15 **** Incremental Build of configuration Debug for project vote ****
+make all 
+'Building target: vote'
+'Invoking: Cross GCC Linker'
+gcc  -o "vote"  ./main.o   
+'Finished building target: vote'
+' '
+
+13:40:17 Build Finished. 0 errors, 0 warnings. (took 1s.509ms)
+

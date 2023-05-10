@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main () {
+
+	char a = 100;
+	long long int b = $a;
+	printf("address of -a- is %llx\n", b);
+
+	return 0;
+}

@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <stdint.h>
+
+void wait_for_input();
+float scan_for_pos_num();
+
+int main (void) {
+	float r, b, h, a;
+	float area = 0;
+	char code;
+
+	printf("AREA CALCULATOR\n\n-------------------\n");
+	printf("SHAPE     | CODE  |\n----------|-------|\n");
+	printf("Circle    |   c   |\n----------|-------|\n");
+	printf("Triangle  |   t   |\n----------|-------|\n");
+	printf("Rectangle |   r   |\n----------|-------|\n");
+	printf("Square    |   s   |\n----------|-------|\n");
+	printf("Trapezoid |   z   |\n----------|-------|\n");
+	printf("\nEnter code here: ");
+	scanf("%c", &code);
+
+	switch (code) {
+
+	case 'c':
+		printf("Circle area calculation\nEnter the radius: ");
+		scanf("%f", &r);
+		area = r * r * 3.14;
+		break;
+
+	case 't':
+		printf("Triangle area calculation\nEnter the base: ");
+		scanf("%f", &b);
+		printf("Enter the height: ");
+		scanf("%f", &h);
+		area = b * h / 2;
+		break;
+
+	case 'r':
+		printf("Rectangle area calculation\nEnter the length: ");
+		scanf("%f", &a);
+		printf("Enter the width: ");
+		scanf("%f", &b);
+		area = b * a;
+		break;
+
+	case 's':
+		printf("Square area calculation\nEnter the length: ");
+		scanf("%f", &a);
+		area = a * a;
+		break;
+
+	case 'z':
+		printf("Trapezoid area calculation\nEnter the base: ");
+		scanf("%f", &b);
+		printf("Enter the height: ");
+		scanf("%f", &h);
+		printf("Enter the other base: ");
+		scanf("%f", &a);
+		area = (a + b) / 2 * h;
+		break;
+	default:
+		printf("ERROR: NO SUCH CODE\n");
+
+	}
+
+	if(area > 0) {
+		printf("Area = %f\n", area);
+	}
+	wait_for_input();
+
+}
+
+float scan_for_pos_num() {
+	float num;
+	if( (scanf("%f", &num) == 0) || num <= 0 ) {
+		printf("INVALID INPUT\n");
+		return 0;
+	}
+	return num;
+}
+
+void wait_for_input() {
+	fflush(stdout);
+
+	printf("Press enter to exit this application");
+
+	while(getchar() != '\n'){}
+
+	getchar();
+
+}

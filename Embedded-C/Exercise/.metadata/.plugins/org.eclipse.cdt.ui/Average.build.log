@@ -1,0 +1,10 @@
+13:40:09 **** Incremental Build of configuration Debug for project Average ****
+make all 
+'Building target: Average'
+'Invoking: Cross GCC Linker'
+gcc  -o "Average"  ./main_new.o   
+'Finished building target: Average'
+' '
+
+13:40:10 Build Finished. 0 errors, 0 warnings. (took 1s.860ms)
+

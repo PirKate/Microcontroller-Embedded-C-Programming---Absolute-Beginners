@@ -1,0 +1,10 @@
+13:40:10 **** Incremental Build of configuration Debug for project decisions ****
+make all 
+'Building target: decisions'
+'Invoking: Cross GCC Linker'
+gcc  -o "decisions"  ./main.o   
+'Finished building target: decisions'
+' '
+
+13:40:12 Build Finished. 0 errors, 0 warnings. (took 1s.924ms)
+

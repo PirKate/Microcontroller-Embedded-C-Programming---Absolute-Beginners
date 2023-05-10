@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+long long int g_data = 0xFFFEABCD11112345;
+
+int main (void) {
+
+	printf("g_data = %llx\n\n", pAddress,*pAddress);
+
+	char *pAddress = (char *) &g_data;
+	printf("pAddress = %p\n*pAddress = %x\n\n", pAddress,*pAddress);
+
+	pAddress = pAddress + 1;
+	printf("pAddress = %p\n*pAddress = %x\n\n", pAddress,*pAddress);
+}

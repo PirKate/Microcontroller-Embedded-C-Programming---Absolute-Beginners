@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdint.h>
+
+void wait_for_input();
+
+int main (void) {
+	int64_t a = 0, b = 0, c = 0;
+
+	printf("BITWISE CALCULATOR\n\na = ");
+	if (scanf("%I64d", &a) == 0) printf("INVALID INPUT. Exiting...");
+	else {
+		printf("b = ");
+		if (scanf("%I64d", &b) == 0) printf("INVALID INPUT. Exiting...");
+		else {
+			c = a & b;
+			printf ("a & b = %I64d\n", c);
+			c = a | b;
+			printf ("a | b = %I64d\n", c);
+			c = a ^ b;
+			printf ("a ^ b = %I64d\n", c);
+			c = ~a;
+			printf ("~a = %I64d\n", c);
+			c = ~b;
+			printf ("~b = %I64d\n", c);
+		}
+	}
+
+	wait_for_input();
+
+}
+
+void wait_for_input() {
+	fflush(stdout);
+
+	printf("Press enter to exit this application");
+
+	while(getchar() != '\n'){}
+
+	getchar();
+
+}

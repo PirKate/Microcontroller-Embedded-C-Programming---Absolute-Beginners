@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdint.h>
+
+void wait_for_input();
+
+int main (void) {
+	int8_t r, b, h, a;
+	int8_t area;
+	char code;
+
+	printf("AREA CALCULATOR\n\n-------------------\n");
+	printf("SHAPE     | CODE  |\n----------|-------|\n");
+	printf("Circle    |   c   |\n----------|-------|\n");
+	printf("Triangle  |   t   |\n----------|-------|\n");
+	printf("Rectangle |   r   |\n----------|-------|\n");
+	printf("Square    |   s   |\n----------|-------|\n");
+	printf("Trapezoid |   z   |\n----------|-------|\n");
+	printf("\nEnter code here: ");
+	scanf("%c", &code);
+
+	switch (code) {
+
+	case 'c':
+		printf("Circle area calculation\nEnter the radius: ");
+		scanf("%d", &r);
+		area = r*r;
+		break;
+
+	case 't':
+		printf("\nTriangle area calculation\nEnter the base: ");
+		scanf("%d", &b);
+		printf("Enter the height: ");
+		scanf("%d", &h);
+		area = b * h / 2;
+			break;
+
+	case 'r':
+			break;
+
+	case 's':
+			break;
+
+	case 'z':
+			break;
+	//default:
+
+	}
+
+	if(!(area <= 0)) {
+		printf("\nArea = %i\n", area);
+	}
+
+	wait_for_input();
+
+}
+
+void wait_for_input() {
+	fflush(stdout);
+
+	printf("Press enter to exit this application");
+
+	while(getchar() != '\n'){}
+
+	getchar();
+
+}

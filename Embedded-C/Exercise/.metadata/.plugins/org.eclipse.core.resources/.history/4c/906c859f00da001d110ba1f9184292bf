@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main (void) {
+
+	printf("enter 6 characters of your choice: ");
+	fflush(stdout);
+
+	char q, w, e, r, t, y;
+	scanf("%c %c %c %c %c %c", &q, &w, &e, &r, &t, &y);
+
+	printf("ASCII codes: %i, %i, %i, %i, %i, %i\n", q, w, e, r, t, y);
+	printf("press enter to exit the app \n");
+
+	while(getchar() != '\n'){
+
+	}
+	getchar();
+
+}

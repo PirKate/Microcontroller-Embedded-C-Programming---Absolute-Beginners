@@ -1,0 +1,10 @@
+13:40:12 **** Incremental Build of configuration Debug for project pointer ****
+make all 
+'Building target: pointer'
+'Invoking: Cross GCC Linker'
+gcc  -o "pointer"  ./pointer.o   
+'Finished building target: pointer'
+' '
+
+13:40:14 Build Finished. 0 errors, 0 warnings. (took 1s.550ms)
+

@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdint.h>
+
+int main (void) {
+	int32_t a, b;
+
+	printf("BITWISE CALCULATOR\n\na = ");
+	if (scanf("%d", a) == 0) printf("INVALID INPUT. Exiting...");
+	else {
+		print("b = ");
+		if (scanf("%d", b) == 0) printf("INVALID INPUT. Exiting...");
+	}
+
+}

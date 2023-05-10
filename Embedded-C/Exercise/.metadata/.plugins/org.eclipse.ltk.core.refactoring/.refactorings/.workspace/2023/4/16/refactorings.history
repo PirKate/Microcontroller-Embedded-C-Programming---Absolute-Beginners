@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;swirchCaseArea&apos; to &apos;switchCaseArea&apos;" description="Rename resource &apos;swirchCaseArea&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/swirchCaseArea" name="switchCaseArea" stamp="1682069649637" updateReferences="true"/>
+</session>

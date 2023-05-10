@@ -1,0 +1,15 @@
+17:07:30 **** Incremental Build of configuration Debug for project bitMaskingSetBit ****
+make all 
+'Building file: ../main.c'
+'Invoking: Cross GCC Compiler'
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: bitMaskingSetBit'
+'Invoking: Cross GCC Linker'
+gcc  -o "bitMaskingSetBit"  ./main.o   
+'Finished building target: bitMaskingSetBit'
+' '
+
+17:07:32 Build Finished. 0 errors, 0 warnings. (took 1s.63ms)
+

@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdint.h>
+
+int main (void) {
+	int8_t r, b, h, a;
+
+	printf("Area calculator\n");
+	printf("Shape        code\n");
+	printf("Circle       c");
+	printf("Triangle     t");
+	printf("Rectangle    r");
+	printf("Square       s");
+	printf("Trapezoid    z");
+
+}

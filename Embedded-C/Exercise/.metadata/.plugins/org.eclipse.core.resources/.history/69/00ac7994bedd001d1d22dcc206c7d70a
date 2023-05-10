@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main () {
+
+	char a = 100;
+
+	printf("address of -a- is %p\n", &a);
+
+	char* a_address = (char*) &a;
+
+	printf("address of -a- is %p\n", *a_address);
+
+	return 0;
+}

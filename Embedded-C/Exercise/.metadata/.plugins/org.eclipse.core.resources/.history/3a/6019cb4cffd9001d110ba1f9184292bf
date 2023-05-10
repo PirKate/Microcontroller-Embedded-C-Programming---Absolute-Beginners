@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main (void) {
+
+	printf("enter 6 characters of your choice: ");
+	fflush(stdout);
+
+	char q, w, e, r, t, y;
+
+
+}

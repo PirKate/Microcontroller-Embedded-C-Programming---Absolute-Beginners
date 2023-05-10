@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdint.h>
+
+void wait_for_input();
+
+int main (void) {
+
+	float a, b;
+
+	printf("COMPARE TWP NUMBERS\na = ");
+
+	if( scanf("%f", &a) == 0 ) {
+		printf("invalid input, Exiting...\n");
+		fflush(stdout);
+		wait_for_input();
+		return 0;
+	}
+
+	printf("b = ");
+	if( scanf("%f", &b) == 0 ) {
+		printf("invalid input, Exiting...\n");
+		fflush(stdout);
+		wait_for_input();
+		return 0;
+	}
+
+	int a1 = (int)a, b1 = (int)b;
+
+	if ( (a1 != a) || (b1 != b) ) printf("warning! comparing only integer parts");
+
+	if ( a1 > b1 ) printf ("a > b\n");
+	else if (a1 == b1) printf ("a = b\n");
+	else if ( a1 < b1) printf ("a < b\n");
+}
+
+void wait_for_input() {
+
+	printf("Press enter to exit this application");
+
+	while(getchar() != '\n'){}
+
+	getchar();
+
+}

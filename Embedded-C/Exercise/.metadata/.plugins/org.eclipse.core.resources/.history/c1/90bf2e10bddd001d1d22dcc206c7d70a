@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main () {
+
+	char a = 100;
+	printf("address of -a- is %l\n", $a);
+
+	return 0;
+}

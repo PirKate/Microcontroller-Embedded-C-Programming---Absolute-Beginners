@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdint.h>
+
+int main (void) {
+	int64_t a = 0, b = 0, c = 0;
+
+	printf("BITWISE CALCULATOR\n\na = ");
+	if (scanf("%l64d", a) == 0) printf("INVALID INPUT. Exiting...");
+	else {
+		printf("b = ");
+		if (scanf("%I64d", b) == 0) printf("INVALID INPUT. Exiting...");
+		else {
+			c = a & b;
+			printf ("a & b = %I64d\n", c);
+			c = a | b;
+			printf ("a | b = %I64d\n", c);
+			c = a ^ b;
+			printf ("a ^ b = %I64d\n", c);
+			c = ~a;
+			printf ("~a = %I64d\n", c);
+			c = ~b;
+			printf ("~b = %I64d\n", c);
+		}
+	}
+
+}
